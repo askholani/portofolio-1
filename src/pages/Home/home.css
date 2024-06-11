@@ -1,0 +1,14 @@
+.parent {
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  overflow: hidden;
+}
+.magicpattern {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url('data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22%3E%3Cstop offset=%220%25%22 stop-color=%22%23003bff%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%238fffff%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M869 640q-35 140-164 216.5t-288 69q-159-7.5-253.5-138T50 493Q31 329 165 240T443 79.5Q587 8 707 117t158.5 246Q904 500 869 640Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M869 640q-35 140-164 216.5t-288 69q-159-7.5-253.5-138T50 493Q31 329 165 240T443 79.5Q587 8 707 117t158.5 246Q904 500 869 640Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
