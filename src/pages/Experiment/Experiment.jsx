@@ -1,39 +1,29 @@
-// import React from 'react'
-import { motion, useScroll } from 'framer-motion'
-import myImage from '../../assets/images/hero-white.png'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 
 export const Experiment = () => {
-  const { scrollYProgress } = useScroll()
-  const scrollRef = useRef(null)
-  console.log(scrollYProgress)
+  const ref = useRef(null)
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start end', 'end start'],
+  })
+
+  const translateX = useTransform(scrollYProgress, [0, 1], ['0', '1000px'])
 
   return (
-    <motion.section className='flex flex-col justify-start'>
-      <motion.div
-        className='fixed top-0 left-0 right-0 h-10 bg-blue-200'
-        style={{
-          scaleX: scrollYProgress,
-          transformOrigin: 'left', // Set transform-origin to left
-        }}
-      />
+    <section className='relative z-10 h-[200vh] pt-20 bg-gray-100'>
       <div
-        className='h-[200vh] relative'
-        ref={scrollRef}
-        style={{ overflow: 'scroll' }}>
-        <motion.div
-          className='bg-contain absolute z-10 right-0 top-[100vh] w-[35rem] h-[35rem]'
-          initial={{ opacity: 1 }}
-          whileInView={{
-            rotate: 100,
-            opacity: 1,
-            transition: { duration: 5, type: 'spring', bounce: 0.4 },
-          }}
-          //  viewport={{ once: true }}
-          viewport={{ root: scrollRef }}>
-          <img src={myImage} alt='' className='w-full h-full' />
-        </motion.div>
+        ref={ref}
+        className='flex flex-col h-[100vh] items-center justify-center'>
+        <motion.h1
+          className='text-3xl antialiased font-semibold py-4 absolute left-0'
+          style={{ translateX }}>
+          Projects Highlight
+        </motion.h1>
+        <div className='h-[150vh]'></div>
       </div>
-    </motion.section>
+    </section>
   )
 }
+
+export default Experiment
