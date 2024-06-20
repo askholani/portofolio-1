@@ -26,7 +26,7 @@ const Project = ({ value, index }) => {
         opacity: opacityProgress,
         translateX: translateXProgress,
       }}>
-      <div className='grid grid-cols-12 group cursor-pointer py-12 rounded-md bg-white relative shadow-md shadow-sky-200 w-4/5'>
+      <div className='grid grid-cols-12 group cursor-pointer py-12 rounded-md bg-white relative shadow-md w-4/5'>
         <div className='col-span-6 flex items-center'>
           <div className='w-1/4 flex justify-center text-lg'>0{index + 1}</div>
           <div className='w-3/4 flex-col'>

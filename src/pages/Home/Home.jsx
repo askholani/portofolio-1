@@ -6,6 +6,8 @@ import './home.css'
 import Projects from '../../component/Project/Projects'
 import About from '../../component/About/About'
 import Background from '../../component/Background/Background'
+import Skills from '../../component/Skils/Skills'
+import Contact from '../../component/Contact/Contact'
 
 const projects = [
   {
@@ -31,6 +33,8 @@ export const Home = () => {
       <Background />
       <About image={myImage} />
       <Projects projectArr={projects} />
+      <Skills />
+      <Contact />
     </>
   )
 }

@@ -12,7 +12,7 @@ const Projects = ({ projectArr }) => {
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.1, 1])
 
   return (
-    <section ref={ref} className='relative z-10 h-[130vh] overflow-hidden'>
+    <section ref={ref} className='relative z-10 py-[10vh] overflow-hidden'>
       <div className='flex flex-col'>
         <motion.h1
           style={{ translateX, opacity: opacityProgress }}
