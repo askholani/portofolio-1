@@ -4,10 +4,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=askholani&label=Profile%20views&color=0e75b6&style=flat" alt="askholani" /> </p>
 
-- 📫 How to reach me **aqilulmuttaqin16@gmail.com**
-
-- ⚡ Fun fact **I think I am funny**
-
+- 📫 How to reach me **askholani.ibnuhajar@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
