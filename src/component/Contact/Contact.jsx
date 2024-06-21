@@ -20,12 +20,16 @@ const Contact = () => {
                   question or just want to say hi, feel free to drop a message.
                 </span>
               </div>
-              <div className='flex flex-col gap-y-2 py-4'>
+              <div className='flex flex-col gap-y-4 py-4'>
                 <div className='text-sm grid grid-cols-2'>
-                  <div className='flex flex-col gap-y-1 col-span-1'>
-                    <span className='uppercase opacity-70'>email : </span>
+                  <a
+                    href='mailto:askholani.ibnuhajar@gmail.com'
+                    target='_blank'
+                    rel='nofollow'
+                    className='flex flex-col gap-y-1 col-span-1 cursor-pointer'>
+                    <span className='uppercase opacity-70'>email :</span>
                     <span>askholani.ibnuhajar@gmail.com</span>
-                  </div>
+                  </a>
                   <a
                     href='https://www.linkedin.com/in/askholani/'
                     className='flex flex-col gap-y-1 col-span-1'>
