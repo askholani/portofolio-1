@@ -3,18 +3,22 @@ const Contact = () => {
     <section
       id='contact'
       className='text-slate-700 py-[5vh] z-10 flex flex-col'>
-      <h1 className='text-3xl antialiased font-semibold py-4 px-72'>contact</h1>
+      <h1 className='antialiased font-semibold py-4 px-72 text-3xl opacity-80'>
+        contact
+      </h1>
       <div className='px-32'>
         <div className='grid grid-cols-12 gap-x-8 bg-white relative px-10 py-8 rounded-md shadow-md'>
           <div className='col-span-6 flex flex-col gap-y-6'>
             <div className='flex flex-col h-full justify-between'>
               <div className='flex flex-col gap-y-2'>
-                <div className='flex font-bold gap-x-2'>
-                  <span className='text-3xl'>Stay</span>
-                  <span className='text-3xl'>In</span>
-                  <span className='text-3xl'>Touch</span>
+                <div className='flex flex-col font-bold gap-x-2'>
+                  <div className='flex gap-x-4'>
+                    <span className='text-7xl text-sky-600'>Stay</span>
+                    <span className='text-7xl'>In</span>
+                  </div>
+                  <span className='text-7xl'>Touch</span>
                 </div>
-                <span className='text-lg tracking-wide'>
+                <span className='text-xs tracking-wide'>
                   I’m always open to discussing new projects, creative ideas, or
                   opportunities to be part of your vision. Whether you have a
                   question or just want to say hi, feel free to drop a message.

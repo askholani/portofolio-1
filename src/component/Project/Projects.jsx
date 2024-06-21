@@ -19,7 +19,7 @@ const Projects = ({ projectArr }) => {
     offset: ['0 1', '1.1 1'],
   })
   const translateX = useTransform(scrollYProgress, [0, 0.7], ['0', '288px'])
-  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.1, 1])
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.1, 0.8])
 
   return (
     <section
@@ -29,7 +29,7 @@ const Projects = ({ projectArr }) => {
       <div className='flex flex-col'>
         <motion.h1
           style={{ translateX, opacity: opacityProgress }}
-          className='text-3xl antialiased font-semibold py-4'>
+          className='text-3xl antialiased font-semibold py-4 opacity-80'>
           projects highlight
         </motion.h1>
         <div className='flex flex-col gap-y-12 overflow-hidden py-8'>
