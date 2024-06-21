@@ -2,7 +2,7 @@
 <h1 align="center">Hello , I'm Ibnu Hajar Askholani</h1>
 <h3 align="center">Passionate IT Professional in Web Development</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=aqilulmuttaqin&label=Profile%20views&color=0e75b6&style=flat" alt="aqilulmuttaqin" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=askholani&label=Profile%20views&color=0e75b6&style=flat" alt="askholani" /> </p>
 
 - 📫 How to reach me **aqilulmuttaqin16@gmail.com**
 
