@@ -19,7 +19,7 @@ const skills = [
 const Skills = () => {
   return (
     <section className='relative py-[10vh] flex flex-col'>
-      <TextParallax baseVelocity={-5}>{skills}</TextParallax>
+      <TextParallax baseVelocity={-7}>{skills}</TextParallax>
     </section>
   )
 }

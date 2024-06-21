@@ -1,18 +1,26 @@
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const animate = {
   width: '100%',
 }
 
 export const Navbar = () => {
+  const [time, setTime] = useState(new Date())
+  useEffect(() => {
+    const timerId = setInterval(() => tick(), 1000)
+    return () => clearInterval(timerId)
+  }, [])
+  const tick = () => {
+    setTime(new Date())
+  }
   const [hoveredIndex, setHoveredIndex] = useState(null)
 
   return (
     <header className='h-[10vh] relative z-10'>
       <nav className='py-4 flex justify-between px-16'>
         <button className='flex flex-col'>
-          <span>00:00:00</span>
+          <p className='font-semibold'>{time.toLocaleTimeString()}</p>
           <span className='h-1'></span>
         </button>
         <ul className='flex justify-center gap-x-12 font-semibold'>
@@ -23,7 +31,9 @@ export const Navbar = () => {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
               className='flex flex-col relative cursor-pointer'>
-              <h1 className='px-2'>{item}</h1>
+              <a href={`#${item}`} className='px-2'>
+                {item}
+              </a>
               {hoveredIndex === index && (
                 <motion.span
                   initial='false'
@@ -34,7 +44,7 @@ export const Navbar = () => {
           ))}
         </ul>
         <button className='flex flex-col'>
-          <span>Mode</span>
+          {/* <span>Mode</span> */}
           <span className='h-1'></span>
         </button>
       </nav>

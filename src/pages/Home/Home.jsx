@@ -8,6 +8,7 @@ import About from '../../component/About/About'
 import Background from '../../component/Background/Background'
 import Skills from '../../component/Skils/Skills'
 import Contact from '../../component/Contact/Contact'
+import Hero from '../../component/Hero/Hero'
 
 const projects = [
   {
@@ -31,10 +32,18 @@ export const Home = () => {
   return (
     <>
       <Background />
+      <div className='fixed right-20 bottom-10 z-30'>
+        <a
+          href='#hero'
+          className='w-10 h-10  border-sky-600 rounded-full border-2 flex justify-center items-center'>
+          <i className='fas fa-arrow-up text-sky-600'></i>
+        </a>
+      </div>
+      <Hero />
       <About image={myImage} />
       <Projects projectArr={projects} />
-      <Skills />
       <Contact />
+      <Skills />
     </>
   )
 }
